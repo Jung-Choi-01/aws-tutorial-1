@@ -23,7 +23,7 @@ const client = generateClient({
   authMode: "userPool",
 });
 
-export default function App() {
+function App() {
   const [expenses, setExpenses] = useState([]);
 
   useEffect(() => {
@@ -135,3 +135,5 @@ export default function App() {
     </Authenticator>
   );
 }
+
+export default App;
